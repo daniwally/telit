@@ -20,6 +20,19 @@ export default function WhatWeBuild() {
               </h2>
               <p className="text-[#8B9BB4] text-sm md:text-base mt-6 font-light leading-relaxed max-w-md">{t.build.desc}</p>
             </motion.div>
+            {/* Section Image */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={isInView ? { opacity: 1, y: 0 } : {}}
+              transition={{ duration: 0.8, delay: 0.3 }}
+              className="mt-10 overflow-hidden border border-[#1A2433]"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1761912149936-8f662fc2a13e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwyfHxkYXJrJTIwdGVjaG5vbG9neSUyMGRpZ2l0YWwlMjBlY29zeXN0ZW0lMjBhYnN0cmFjdHxlbnwwfHx8fDE3NzQ2MjE3ODd8MA&ixlib=rb-4.1.0&q=85"
+                alt="Digital ecosystem"
+                className="w-full h-[240px] md:h-[280px] object-cover opacity-80 hover:opacity-100 transition-opacity duration-500"
+              />
+            </motion.div>
           </div>
           <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5">
             {t.build.blocks.map((block, i) => (
