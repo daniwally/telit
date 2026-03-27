@@ -64,8 +64,13 @@ export default function Closing() {
           transition={{ duration: 0.6, delay: 1 }}
           className="mt-24 pt-8 border-t border-[#1A2433]"
         >
+          <img
+            src="https://customer-assets.emergentagent.com/job_three-markets-one/artifacts/0c2kopd2_logo-wtf.png"
+            alt="WTF Brief Destroyers"
+            className="h-8 mx-auto mb-4"
+          />
           <p className="text-[#8B9BB4] text-xs tracking-wider">
-            WTF &mdash; Strategy, Design & Systems for Telit Cinterion &mdash; March 2026
+            Strategy, Design & Systems for Telit Cinterion &mdash; March 2026
           </p>
         </motion.div>
       </div>

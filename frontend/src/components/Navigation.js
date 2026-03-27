@@ -41,10 +41,13 @@ export default function Navigation() {
         <button
           data-testid="nav-logo"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="font-['Inter'] text-white font-semibold text-lg tracking-tight hover:opacity-70 transition-opacity"
+          className="hover:opacity-70 transition-opacity"
         >
-          WTF
-          <span className="text-[#0052FF] ml-0.5">.</span>
+          <img
+            src="https://customer-assets.emergentagent.com/job_three-markets-one/artifacts/0c2kopd2_logo-wtf.png"
+            alt="WTF Brief Destroyers"
+            className="h-10 md:h-12 w-auto"
+          />
         </button>
 
         {/* Desktop Nav */}
