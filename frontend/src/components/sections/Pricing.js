@@ -85,6 +85,7 @@ export default function Pricing() {
                 </div>
               </div>
 
+              {plan.cta && (
               <button
                 data-testid={`pricing-cta-${i}`}
                 className={`mt-8 w-full py-3 text-sm font-medium tracking-wide transition-all duration-300 ${
@@ -95,6 +96,7 @@ export default function Pricing() {
               >
                 {plan.cta}
               </button>
+              )}
             </motion.div>
           ))}
         </div>

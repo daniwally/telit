@@ -193,7 +193,7 @@ const translations = {
             'SEO infrastructure',
             'QA & launch support',
           ],
-          cta: 'Request Proposal',
+          cta: '',
         },
         {
           name: 'Maintenance',
@@ -416,7 +416,7 @@ const translations = {
             'Infraestructura SEO',
             'QA y soporte de lanzamiento',
           ],
-          cta: 'Solicitar Propuesta',
+          cta: '',
         },
         {
           name: 'Mantenimiento',
