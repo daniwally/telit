@@ -1,9 +1,32 @@
 import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import html2pdf from 'html2pdf.js';
 
 export default function Closing() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownload = async () => {
+    setDownloading(true);
+    try {
+      const element = document.getElementById('hero')?.closest('[data-testid="home-page"]');
+      if (!element) return;
+      const opt = {
+        margin: 0,
+        filename: 'Telit-Cinterion-Proposal-WTF.pdf',
+        image: { type: 'jpeg', quality: 0.85 },
+        html2canvas: { scale: 1.5, useCORS: true, logging: false, scrollY: 0 },
+        jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] },
+      };
+      await html2pdf().set(opt).from(element).save();
+    } catch (err) {
+      console.error('PDF generation failed:', err);
+    } finally {
+      setDownloading(false);
+    }
+  };
 
   return (
     <section
@@ -52,9 +75,11 @@ export default function Closing() {
           </button>
           <button
             data-testid="closing-download-btn"
-            className="px-10 py-4 border border-[#1A2433] text-[#8B9BB4] text-sm font-medium tracking-wide hover:border-white hover:text-white transition-all duration-300"
+            onClick={handleDownload}
+            disabled={downloading}
+            className="px-10 py-4 border border-[#1A2433] text-[#8B9BB4] text-sm font-medium tracking-wide hover:border-white hover:text-white transition-all duration-300 disabled:opacity-50"
           >
-            Download Proposal
+            {downloading ? 'Generating PDF...' : 'Download Proposal'}
           </button>
         </motion.div>
 
