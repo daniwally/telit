@@ -17,7 +17,7 @@ export default function BusinessModel() {
           <h2 className="font-['Inter'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight">{t.model.title}</h2>
           <p className="text-[#8B9BB4] text-base md:text-lg mt-4 font-light max-w-lg mx-auto">{t.model.desc}</p>
         </motion.div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
           {t.model.options.map((model, i) => (
             <motion.div key={i} data-testid={`model-${model.title.toLowerCase().replace(/\s+/g, '-')}`}
               initial={{ opacity: 0, y: 30 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: i * 0.12 + 0.2 }}

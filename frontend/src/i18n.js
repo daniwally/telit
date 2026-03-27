@@ -153,7 +153,7 @@ const translations = {
     model: {
       label: '10 — Business Model',
       title: 'Choose your model.',
-      desc: 'Three engagement options. Each designed for different levels of ambition.',
+      desc: 'Two engagement options. Build it, then grow it.',
       recommended: 'Recommended',
       options: [
         {
@@ -162,14 +162,9 @@ const translations = {
           features: ['Defined scope & milestones', 'One-time investment', 'Full ownership on delivery'],
         },
         {
-          title: 'Platform',
-          desc: 'Monthly retainer. Continuous build, optimize, and grow. Your dedicated digital team.',
-          features: ['Dedicated team allocation', 'Monthly sprints & reviews', 'Ongoing optimization'],
-        },
-        {
-          title: 'Hybrid Performance',
-          desc: 'Base build + performance-linked growth. We invest in your success.',
-          features: ['Reduced upfront cost', 'KPI-linked compensation', 'Aligned incentives'],
+          title: 'Monthly Fee',
+          desc: 'Monthly retainer. Continuous optimization, content, and growth post-launch.',
+          features: ['Dedicated support team', 'Monthly sprints & reviews', 'Ongoing optimization'],
         },
       ],
     },
@@ -398,7 +393,7 @@ const translations = {
     model: {
       label: '10 — Modelo de Negocio',
       title: 'Elige tu modelo.',
-      desc: 'Tres opciones de compromiso. Cada una disenada para diferentes niveles de ambicion.',
+      desc: 'Dos opciones de compromiso. Construilo, despues hacelo crecer.',
       recommended: 'Recomendado',
       options: [
         {
@@ -407,14 +402,9 @@ const translations = {
           features: ['Alcance y milestones definidos', 'Inversion unica', 'Propiedad total en entrega'],
         },
         {
-          title: 'Plataforma',
-          desc: 'Retainer mensual. Construir, optimizar y crecer continuamente. Tu equipo digital dedicado.',
-          features: ['Equipo dedicado asignado', 'Sprints y revisiones mensuales', 'Optimizacion continua'],
-        },
-        {
-          title: 'Hibrido Performance',
-          desc: 'Construccion base + crecimiento vinculado a rendimiento. Invertimos en tu exito.',
-          features: ['Costo inicial reducido', 'Compensacion vinculada a KPIs', 'Incentivos alineados'],
+          title: 'Fee Mensual',
+          desc: 'Retainer mensual. Optimizacion continua, contenido y crecimiento post-lanzamiento.',
+          features: ['Equipo de soporte dedicado', 'Sprints y revisiones mensuales', 'Optimizacion continua'],
         },
       ],
     },
