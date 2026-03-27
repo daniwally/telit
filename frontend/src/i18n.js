@@ -152,17 +152,17 @@ const translations = {
     },
     model: {
       label: '10 — Business Model',
-      title: 'Choose your model.',
-      desc: 'Two engagement options. Build it, then grow it.',
+      title: 'Two stages. One transformation.',
+      desc: 'First we build it. Then we make it grow.',
       recommended: 'Recommended',
       options: [
         {
-          title: 'Project',
+          title: 'Stage 1 — Development',
           desc: 'Fixed-scope engagement. Strategy through launch. Clear deliverables, clear timeline.',
           features: ['Defined scope & milestones', 'One-time investment', 'Full ownership on delivery'],
         },
         {
-          title: 'Monthly Fee',
+          title: 'Stage 2 — Growth & Maintenance',
           desc: 'Monthly retainer. Continuous optimization, content, and growth post-launch.',
           features: ['Dedicated support team', 'Monthly sprints & reviews', 'Ongoing optimization'],
         },
@@ -376,17 +376,17 @@ const translations = {
     },
     model: {
       label: '10 — Modelo de Negocio',
-      title: 'Elige tu modelo.',
-      desc: 'Dos opciones de compromiso. Construilo, despues hacelo crecer.',
+      title: 'Dos etapas. Una transformacion.',
+      desc: 'Primero lo construimos. Despues lo hacemos crecer.',
       recommended: 'Recomendado',
       options: [
         {
-          title: 'Proyecto',
+          title: 'Etapa 1 — Desarrollo',
           desc: 'Compromiso de alcance fijo. De la estrategia al lanzamiento. Entregables claros, timeline claro.',
           features: ['Alcance y milestones definidos', 'Inversion unica', 'Propiedad total en entrega'],
         },
         {
-          title: 'Fee Mensual',
+          title: 'Etapa 2 — Crecimiento & Mantenimiento',
           desc: 'Retainer mensual. Optimizacion continua, contenido y crecimiento post-lanzamiento.',
           features: ['Equipo de soporte dedicado', 'Sprints y revisiones mensuales', 'Optimizacion continua'],
         },
