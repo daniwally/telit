@@ -1,7 +1,9 @@
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { useLang } from '@/i18n';
 
 export default function Hero() {
+  const { t } = useLang();
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -17,7 +19,6 @@ export default function Hero() {
       data-testid="hero-section"
       className="relative min-h-screen flex items-center justify-center overflow-hidden grain-overlay"
     >
-      {/* Background Image with Parallax */}
       <motion.div style={{ y }} className="absolute inset-0 z-0">
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -29,18 +30,14 @@ export default function Hero() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#030508]" />
       </motion.div>
 
-      {/* Content */}
-      <motion.div
-        style={{ opacity }}
-        className="relative z-10 section-container text-center max-w-5xl mx-auto"
-      >
+      <motion.div style={{ opacity }} className="relative z-10 section-container text-center max-w-5xl mx-auto">
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
           className="text-[#0052FF] text-sm md:text-base tracking-[0.3em] uppercase font-light mb-8"
         >
-          Telit Cinterion &mdash; Digital Transformation
+          {t.hero.tag}
         </motion.p>
 
         <motion.h1
@@ -49,9 +46,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.5, ease: [0.22, 1, 0.36, 1] }}
           className="font-['Inter'] text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-semibold text-white tracking-tight leading-[1.05]"
         >
-          One website can't win
+          {t.hero.h1_1}
           <br />
-          <span className="text-gradient-blue">three markets.</span>
+          <span className="text-gradient-blue">{t.hero.h1_2}</span>
         </motion.h1>
 
         <motion.p
@@ -60,7 +57,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.9 }}
           className="mt-8 text-[#8B9BB4] text-base md:text-lg max-w-xl mx-auto font-light leading-relaxed"
         >
-          Time to build platforms, not pages.
+          {t.hero.sub}
         </motion.p>
 
         <motion.div
@@ -74,18 +71,17 @@ export default function Hero() {
             onClick={() => document.getElementById('shift')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-3 bg-[#0052FF] text-white text-sm font-medium tracking-wide hover:bg-[#0040CC] transition-colors duration-300"
           >
-            Explore the Proposal
+            {t.hero.cta1}
           </button>
           <button
             data-testid="hero-contact-btn"
             onClick={() => document.getElementById('closing')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-3 border border-[#1A2433] text-[#8B9BB4] text-sm font-medium tracking-wide hover:border-white hover:text-white transition-all duration-300"
           >
-            Get in Touch
+            {t.hero.cta2}
           </button>
         </motion.div>
 
-        {/* Scroll indicator */}
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

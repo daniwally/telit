@@ -1,18 +1,20 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-
-const navItems = [
-  { label: 'The Shift', id: 'shift' },
-  { label: 'Problem', id: 'problem' },
-  { label: 'Opportunity', id: 'opportunity' },
-  { label: 'Proposal', id: 'proposal' },
-  { label: 'Phases', id: 'phases' },
-  { label: 'Model', id: 'model' },
-];
+import { useLang } from '@/i18n';
 
 export default function Navigation() {
+  const { lang, setLang, t } = useLang();
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+
+  const navItems = [
+    { label: t.nav.shift, id: 'shift' },
+    { label: t.nav.problem, id: 'problem' },
+    { label: t.nav.opportunity, id: 'opportunity' },
+    { label: t.nav.proposal, id: 'proposal' },
+    { label: t.nav.phases, id: 'phases' },
+    { label: t.nav.model, id: 'model' },
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 60);
@@ -62,12 +64,39 @@ export default function Navigation() {
               {item.label}
             </button>
           ))}
+
+          {/* Language Selector */}
+          <div data-testid="lang-selector" className="flex items-center border border-[#1A2433] overflow-hidden">
+            <button
+              data-testid="lang-en"
+              onClick={() => setLang('en')}
+              className={`px-3 py-1.5 text-xs font-medium tracking-wide transition-all duration-300 ${
+                lang === 'en'
+                  ? 'bg-white text-black'
+                  : 'text-[#8B9BB4] hover:text-white'
+              }`}
+            >
+              EN
+            </button>
+            <button
+              data-testid="lang-es"
+              onClick={() => setLang('es')}
+              className={`px-3 py-1.5 text-xs font-medium tracking-wide transition-all duration-300 ${
+                lang === 'es'
+                  ? 'bg-white text-black'
+                  : 'text-[#8B9BB4] hover:text-white'
+              }`}
+            >
+              ES
+            </button>
+          </div>
+
           <button
             data-testid="nav-contact-btn"
             onClick={() => scrollTo('closing')}
             className="text-sm px-5 py-2 border border-[#1A2433] text-white hover:bg-white hover:text-black transition-all duration-300"
           >
-            Let's Talk
+            {t.nav.talk}
           </button>
         </div>
 
@@ -102,6 +131,27 @@ export default function Navigation() {
                   {item.label}
                 </button>
               ))}
+              {/* Mobile Lang Selector */}
+              <div className="flex items-center gap-2 pt-2 border-t border-[#1A2433]">
+                <button
+                  data-testid="lang-mobile-en"
+                  onClick={() => setLang('en')}
+                  className={`px-3 py-1.5 text-xs font-medium tracking-wide transition-all duration-300 border ${
+                    lang === 'en' ? 'bg-white text-black border-white' : 'text-[#8B9BB4] border-[#1A2433]'
+                  }`}
+                >
+                  EN
+                </button>
+                <button
+                  data-testid="lang-mobile-es"
+                  onClick={() => setLang('es')}
+                  className={`px-3 py-1.5 text-xs font-medium tracking-wide transition-all duration-300 border ${
+                    lang === 'es' ? 'bg-white text-black border-white' : 'text-[#8B9BB4] border-[#1A2433]'
+                  }`}
+                >
+                  ES
+                </button>
+              </div>
             </div>
           </motion.div>
         )}
