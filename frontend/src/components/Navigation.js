@@ -46,7 +46,7 @@ export default function Navigation() {
           <img
             src="https://customer-assets.emergentagent.com/job_three-markets-one/artifacts/0c2kopd2_logo-wtf.png"
             alt="WTF Brief Destroyers"
-            className="h-10 md:h-12 w-auto"
+            className="h-[50px] md:h-[60px] w-auto"
           />
         </button>
 

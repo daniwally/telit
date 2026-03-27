@@ -92,7 +92,7 @@ export default function Closing() {
           <img
             src="https://customer-assets.emergentagent.com/job_three-markets-one/artifacts/0c2kopd2_logo-wtf.png"
             alt="WTF Brief Destroyers"
-            className="h-8 mx-auto mb-4"
+            className="h-10 mx-auto mb-4"
           />
           <p className="text-[#8B9BB4] text-xs tracking-wider">
             Strategy, Design & Systems for Telit Cinterion &mdash; March 2026
