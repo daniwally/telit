@@ -45,7 +45,7 @@ export default function BusinessModel() {
           <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
             10 &mdash; Business Model
           </span>
-          <h2 className="font-['Clash_Display'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight">
+          <h2 className="font-['Inter'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight">
             Choose your model.
           </h2>
           <p className="text-[#8B9BB4] text-base md:text-lg mt-4 font-light max-w-lg mx-auto">
@@ -78,7 +78,7 @@ export default function BusinessModel() {
                 style={{ background: model.accent }}
               />
 
-              <h3 className="font-['Clash_Display'] text-2xl font-semibold text-white tracking-tight">
+              <h3 className="font-['Inter'] text-2xl font-semibold text-white tracking-tight">
                 {model.title}
               </h3>
               <p className="text-[#8B9BB4] text-sm mt-3 font-light leading-relaxed flex-1">

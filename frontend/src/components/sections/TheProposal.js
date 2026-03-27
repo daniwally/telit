@@ -48,7 +48,7 @@ export default function TheProposal() {
           <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
             04 &mdash; The Proposal
           </span>
-          <h2 className="font-['Clash_Display'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight">
+          <h2 className="font-['Inter'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight">
             Three platforms. One ecosystem.
           </h2>
           <p className="text-[#8B9BB4] text-base md:text-lg mt-4 font-light max-w-2xl mx-auto">
@@ -79,7 +79,7 @@ export default function TheProposal() {
                   className="w-2 h-2 rounded-full mb-6"
                   style={{ background: pillar.accent }}
                 />
-                <h3 className="font-['Clash_Display'] text-2xl md:text-3xl font-semibold text-white tracking-tight">
+                <h3 className="font-['Inter'] text-2xl md:text-3xl font-semibold text-white tracking-tight">
                   {pillar.title}
                 </h3>
                 <p

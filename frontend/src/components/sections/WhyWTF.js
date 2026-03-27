@@ -43,7 +43,7 @@ export default function WhyWTF() {
                 ease: [0.22, 1, 0.36, 1],
               }}
             >
-              <h2 className="font-['Clash_Display'] text-4xl sm:text-5xl md:text-6xl font-semibold text-white tracking-tight leading-none">
+              <h2 className="font-['Inter'] text-4xl sm:text-5xl md:text-6xl font-semibold text-white tracking-tight leading-none">
                 {line}
               </h2>
             </motion.div>

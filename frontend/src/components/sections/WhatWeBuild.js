@@ -48,7 +48,7 @@ export default function WhatWeBuild() {
               <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
                 05 &mdash; What We Build
               </span>
-              <h2 className="font-['Clash_Display'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight leading-tight">
+              <h2 className="font-['Inter'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight leading-tight">
                 We don't build websites.
                 <br />
                 <span className="text-[#8B9BB4]">We build systems.</span>
@@ -73,7 +73,7 @@ export default function WhatWeBuild() {
                 <span className="text-[#0052FF] text-[10px] tracking-[0.25em] uppercase font-mono">
                   {block.label}
                 </span>
-                <h3 className="font-['Clash_Display'] text-lg md:text-xl font-semibold text-white mt-3 tracking-tight">
+                <h3 className="font-['Inter'] text-lg md:text-xl font-semibold text-white mt-3 tracking-tight">
                   {block.title}
                 </h3>
                 <p className="text-[#8B9BB4] text-sm mt-3 font-light leading-relaxed">

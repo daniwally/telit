@@ -21,10 +21,10 @@ export default function Closing() {
           transition={{ duration: 0.8 }}
           className="space-y-4"
         >
-          <h2 className="font-['Clash_Display'] text-4xl sm:text-5xl md:text-6xl font-semibold text-white tracking-tight leading-tight">
+          <h2 className="font-['Inter'] text-4xl sm:text-5xl md:text-6xl font-semibold text-white tracking-tight leading-tight">
             Websites talk.
           </h2>
-          <h2 className="font-['Clash_Display'] text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-tight">
+          <h2 className="font-['Inter'] text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight leading-tight">
             <span className="text-gradient-blue">Systems grow.</span>
           </h2>
         </motion.div>

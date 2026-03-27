@@ -31,7 +31,7 @@ export default function HowWeWork() {
           <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
             07 &mdash; How We Work
           </span>
-          <h2 className="font-['Clash_Display'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
+          <h2 className="font-['Inter'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
             The Loop.
           </h2>
           <p className="text-[#8B9BB4] text-base md:text-lg mt-4 font-light max-w-xl mx-auto">
@@ -87,7 +87,7 @@ export default function HowWeWork() {
             {/* Center text */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center">
-                <span className="font-['Clash_Display'] text-lg md:text-xl font-semibold text-white">
+                <span className="font-['Inter'] text-lg md:text-xl font-semibold text-white">
                   Continuous
                 </span>
                 <br />
@@ -120,11 +120,11 @@ export default function HowWeWork() {
                 >
                   <div className="flex flex-col items-center text-center">
                     <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-[#0B111A] border border-[#0052FF]/40 flex items-center justify-center">
-                      <span className="font-['Clash_Display'] text-xs md:text-sm font-semibold text-white">
+                      <span className="font-['Inter'] text-xs md:text-sm font-semibold text-white">
                         {step.label.charAt(0)}
                       </span>
                     </div>
-                    <span className="font-['Clash_Display'] text-xs md:text-sm font-semibold text-white mt-2 whitespace-nowrap">
+                    <span className="font-['Inter'] text-xs md:text-sm font-semibold text-white mt-2 whitespace-nowrap">
                       {step.label}
                     </span>
                     <span className="text-[#8B9BB4] text-[10px] md:text-xs mt-0.5 whitespace-nowrap hidden md:block">

@@ -32,7 +32,7 @@ export default function Deliverables() {
           <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
             09 &mdash; Deliverables
           </span>
-          <h2 className="font-['Clash_Display'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
+          <h2 className="font-['Inter'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
             What you get.
           </h2>
         </motion.div>

@@ -48,7 +48,7 @@ export default function StrategicLayer() {
           <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
             06 &mdash; Strategic Layer
           </span>
-          <h2 className="font-['Clash_Display'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight max-w-2xl">
+          <h2 className="font-['Inter'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight max-w-2xl">
             Advanced components that turn visitors into pipeline.
           </h2>
         </motion.div>
@@ -67,7 +67,7 @@ export default function StrategicLayer() {
               <span className="text-[#8B9BB4] text-xs font-mono">
                 {String(i + 1).padStart(2, '0')}
               </span>
-              <h3 className="font-['Clash_Display'] text-lg md:text-xl font-semibold text-white mt-4 tracking-tight">
+              <h3 className="font-['Inter'] text-lg md:text-xl font-semibold text-white mt-4 tracking-tight">
                 {item.title}
               </h3>
               <p className="text-[#8B9BB4] text-sm mt-3 font-light leading-relaxed">

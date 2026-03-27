@@ -41,7 +41,7 @@ export default function Navigation() {
         <button
           data-testid="nav-logo"
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-          className="font-['Clash_Display'] text-white font-semibold text-lg tracking-tight hover:opacity-70 transition-opacity"
+          className="font-['Inter'] text-white font-semibold text-lg tracking-tight hover:opacity-70 transition-opacity"
         >
           WTF
           <span className="text-[#0052FF] ml-0.5">.</span>

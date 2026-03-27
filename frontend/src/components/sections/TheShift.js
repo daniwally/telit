@@ -32,7 +32,7 @@ export default function TheShift() {
               <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
                 01 &mdash; The Shift
               </span>
-              <h2 className="font-['Clash_Display'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
+              <h2 className="font-['Inter'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
                 The current state.
               </h2>
               <p className="text-[#8B9BB4] text-sm md:text-base mt-4 font-light leading-relaxed max-w-sm">
@@ -50,7 +50,7 @@ export default function TheShift() {
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, delay: item.delay + 0.3 }}
               >
-                <p className="font-['Clash_Display'] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight leading-tight">
+                <p className="font-['Inter'] text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white tracking-tight leading-tight">
                   {item.text}
                 </p>
                 {i < statements.length - 1 && (

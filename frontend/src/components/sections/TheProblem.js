@@ -44,7 +44,7 @@ export default function TheProblem() {
           <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
             02 &mdash; The Problem
           </span>
-          <h2 className="font-['Clash_Display'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight max-w-3xl">
+          <h2 className="font-['Inter'] text-3xl md:text-4xl lg:text-5xl font-semibold text-white mt-4 tracking-tight max-w-3xl">
             A single site serving three different worlds.
           </h2>
         </motion.div>
@@ -63,7 +63,7 @@ export default function TheProblem() {
               <span className="text-[#0052FF] text-xs font-mono tracking-wider">
                 0{i + 1}
               </span>
-              <h3 className="font-['Clash_Display'] text-xl md:text-2xl font-semibold text-white mt-4 tracking-tight">
+              <h3 className="font-['Inter'] text-xl md:text-2xl font-semibold text-white mt-4 tracking-tight">
                 {item.title}
               </h3>
               <p className="text-[#8B9BB4] text-sm md:text-base mt-3 font-light leading-relaxed">

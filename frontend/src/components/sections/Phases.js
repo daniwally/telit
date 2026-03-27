@@ -68,7 +68,7 @@ export default function Phases() {
           <span className="text-[#0052FF] text-xs tracking-[0.3em] uppercase font-medium">
             08 &mdash; Phases
           </span>
-          <h2 className="font-['Clash_Display'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
+          <h2 className="font-['Inter'] text-3xl md:text-4xl font-semibold text-white mt-4 tracking-tight">
             From strategy to scale.
           </h2>
         </motion.div>
@@ -102,7 +102,7 @@ export default function Phases() {
 
                 <div className="bg-[#0B111A] border border-[#1A2433] p-8 md:p-10 hover:border-[#0052FF]/20 transition-colors duration-500">
                   <div className="flex items-baseline gap-4 mb-4">
-                    <span className="font-['Clash_Display'] text-3xl md:text-4xl font-semibold text-white tracking-tight">
+                    <span className="font-['Inter'] text-3xl md:text-4xl font-semibold text-white tracking-tight">
                       {phase.title}
                     </span>
                     <span className="text-[#0052FF] text-xs tracking-wider font-mono">

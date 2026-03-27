@@ -44,7 +44,7 @@ export default function TheOpportunity() {
             initial={{ opacity: 0, y: 40 }}
             animate={isInView ? { opacity: 1, y: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.15 }}
-            className="font-['Clash_Display'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mt-6 tracking-tight leading-[1.05]"
+            className="font-['Inter'] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold text-white mt-6 tracking-tight leading-[1.05]"
           >
             Don't split the company.
             <br />
@@ -72,7 +72,7 @@ export default function TheOpportunity() {
                   animate={isInView ? { opacity: 1, y: 0 } : {}}
                   transition={{ duration: 0.5, delay: 0.6 + i * 0.1 }}
                 >
-                  <span className="font-['Clash_Display'] text-3xl md:text-4xl font-semibold text-white">
+                  <span className="font-['Inter'] text-3xl md:text-4xl font-semibold text-white">
                     {stat.num}
                   </span>
                   <p className="text-[#8B9BB4] text-xs tracking-wide mt-1 uppercase">
