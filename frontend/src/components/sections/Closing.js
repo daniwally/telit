@@ -42,9 +42,8 @@ export default function Closing() {
           className="text-[#8B9BB4] text-base md:text-lg mt-10 font-light max-w-lg mx-auto">{t.closing.desc}</motion.p>
         <motion.div initial={{ opacity: 0, y: 20 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6, delay: 0.6 }}
           className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button data-testid="closing-start-btn" className="px-10 py-4 bg-[#0052FF] text-white text-sm font-medium tracking-wide hover:bg-[#0040CC] transition-colors duration-300">{t.closing.cta1}</button>
           <button data-testid="closing-download-btn" onClick={handleDownload} disabled={downloading}
-            className="px-10 py-4 border border-[#1A2433] text-[#8B9BB4] text-sm font-medium tracking-wide hover:border-white hover:text-white transition-all duration-300 disabled:opacity-50">
+            className="px-10 py-4 bg-[#0052FF] text-white text-sm font-medium tracking-wide hover:bg-[#0040CC] transition-colors duration-300 disabled:opacity-50">
             {downloading ? t.closing.cta2_loading : t.closing.cta2}
           </button>
         </motion.div>
