@@ -10,6 +10,7 @@ import HowWeWork from '@/components/sections/HowWeWork';
 import Phases from '@/components/sections/Phases';
 import Deliverables from '@/components/sections/Deliverables';
 import BusinessModel from '@/components/sections/BusinessModel';
+import Pricing from '@/components/sections/Pricing';
 import WhyWTF from '@/components/sections/WhyWTF';
 import Closing from '@/components/sections/Closing';
 
@@ -28,6 +29,7 @@ export default function Home() {
       <Phases />
       <Deliverables />
       <BusinessModel />
+      <Pricing />
       <WhyWTF />
       <Closing />
     </div>
