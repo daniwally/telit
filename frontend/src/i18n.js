@@ -176,7 +176,7 @@ const translations = {
       plans: [
         {
           name: 'Development',
-          price: '22K',
+          price: '26.5K',
           period: 'one-time',
           desc: 'Strategy-to-launch for 2 platforms + modules repositioning. 6 weeks.',
           includes: 'Includes:',
@@ -390,7 +390,7 @@ const translations = {
       plans: [
         {
           name: 'Desarrollo',
-          price: '22K',
+          price: '26.5K',
           period: 'unico',
           desc: 'Estrategia hasta lanzamiento para 2 plataformas + reposicionamiento de modulos. 6 semanas.',
           includes: 'Incluye:',
